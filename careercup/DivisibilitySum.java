@@ -1,3 +1,7 @@
+package careercup;
+
+import java.util.Scanner;
+
 /**
  * Problem: For a given N, calculate sum of all numbers which are less than N
  * and divisible by 3 or 5
@@ -16,6 +20,11 @@ public class DivisibilitySum {
 		System.out.println(sum);
 	}
 	public static void main(String args[]){
-		sumDivisible(15);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter value of N: ");
+		int N = sc.nextInt();
+		sumDivisible(N);
+		sc.close();
+
 	}
 }

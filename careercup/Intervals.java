@@ -4,11 +4,7 @@ or consecutive ones.
 */
 
 import java.util.ArrayList;
-import java.lang.Integer;
-import java.util.ArrayDeque;
 import java.util.Collections;
-import java.lang.StringBuilder;
-
 
 class Intervals{
 
@@ -18,12 +14,11 @@ class Intervals{
 		pairs.add(new Pair(3, 5));
 		pairs.add(new Pair(-1, 2));
 		pairs.add(new Pair(10, 12));
-		
-		System.out.println(minimizeOverlap(pairs));
+		System.out.println("Given Intervals: " + pairs);
+		System.out.println("Minimized Intervals: " + minimizeOverlap(pairs));
 	}
 
 	static String minimizeOverlap(ArrayList<Pair> pairs){
-		ArrayDeque<Integer> result = new ArrayDeque<Integer>();
 
 		if(pairs.size() <= 0) return "[,]";
 		
