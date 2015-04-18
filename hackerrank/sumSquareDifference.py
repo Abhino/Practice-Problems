@@ -1,3 +1,6 @@
+'''
+Problem:https://www.hackerrank.com/contests/projecteuler/challenges/euler006
+'''
 def diffSeries(b):
     n = int(b)
     sum2 = (n*(n+1))/2
